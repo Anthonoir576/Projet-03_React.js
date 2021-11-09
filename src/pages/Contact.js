@@ -5,11 +5,39 @@ import ContactForm from '../components/ContactForm';
 import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
 import SocialNetwork from '../components/SocialNetwork';
+import { motion } from 'framer-motion';
+
 
 const Contact = () => {
+
+    const variants = {
+
+        in: {
+            opacity: 1,
+            x: 0
+        },
+        out: {
+            opacity: 0,
+            x: 300
+        }
+
+    };
+
+    const transition = {
+       ease: [.03, .87, .73, .9],
+       duration: .6, 
+    };
+
+
     return (
         <main>
-            <div className="contact">
+            <motion.div className="contact"
+                        exit='out'
+                        animate='in'
+                        initial='out'
+                        variants={variants}
+                        transition={transition}
+            >
                 <Navigation />
                 <Logo />
                 <ContactForm />
@@ -49,7 +77,7 @@ const Contact = () => {
                     </div>
                 </div>
                 <ButtonsBottom left={"/projet04"}/>
-            </div>
+            </motion.div>
         </main>
     );
 };
