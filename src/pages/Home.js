@@ -1,14 +1,10 @@
 import React from 'react';
+import Navigation from '../components/Navigation';
 
 const Home = () => {
     return (
         <div>
-            APP
-            APP
-            APP
-            APP
-            APP
-            APP
+            <Navigation />
         </div>
     );
 };
