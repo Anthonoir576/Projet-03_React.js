@@ -3,7 +3,7 @@
   bottom: 1rem;
   left: 50%;
   transform: translateX(-50%);
-  color: $color-4;
+  color: $font-color;
   font-size: 1.7rem;
   perspective: 40px;
 
@@ -58,7 +58,7 @@
       transform: translateY(-1px);
 
       &:hover {
-        color: $black;
+        text-shadow: 0 0 10px white;
         font-size: 1.8rem;
       }
     }

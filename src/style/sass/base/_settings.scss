@@ -1,21 +1,17 @@
-@font-face {
-  font-family: "font-1";
-  src: url(../../assets/fonts/Questrial-Regular.ttf);
-}
-@font-face {
-  font-family: "font-2";
-  src: url(../../assets/fonts/KronaOne-Regular.ttf);
-}
 
-$font-1: "font-1", sans-serif;
-$font-2: "font-2", serif;
+$font-1: "Lato", sans-serif;
+$font-2: 'Josefin Sans', serif;
 
-$color-1: #fafeff;
+$color-1: #000000;
 $color-2: #00c1ec;
 $color-3: #e7f7fe;
 $color-4: rgb(141, 141, 141);
 $black: rgb(40, 40, 40);
 $red: rgb(253, 87, 87);
+
+$primaire : #ff0000;
+$font-color : white;
+$background : #30475E;
 
 * {
   margin: 0;
@@ -36,7 +32,7 @@ html {
 }
 a,
 a:visited {
-  color: $color-4;
+  color: $font-color;
 }
 body {
   font-family: $font-1;

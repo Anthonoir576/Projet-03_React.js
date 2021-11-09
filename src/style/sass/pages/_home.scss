@@ -7,7 +7,7 @@
     content: '';
     height: 900px;
     width: 900px;
-    background: $color-3;
+    background: $primaire;
     border-radius: 50%;
     position: absolute;
     bottom: -480px;
@@ -50,7 +50,7 @@
         font-size: 3.7rem;
         position: relative;
         font-family: $font-2;
-        color: $black;
+        color: $font-color;
 
         @media screen and (max-width: 650px){
           font-size: 2rem;
@@ -65,9 +65,9 @@
           height: 225px;
           width: 225px;
           border-radius: 50%;
-          border: 1px $color-2 solid;
-          top: -40px;
-          left: -180px;
+          border: 1px $primaire solid;
+          top: -30px;
+          left: -140px;
           z-index: -1;
           animation: h1Anim 1.5s forwards ease;
           transform: scale(0);
@@ -89,6 +89,7 @@
       h2 {
         font-size: 4.2rem;
         font-weight: 100;
+        color : $font-color;
 
         @media screen and (max-width: 650px){
           font-size: 2rem;
