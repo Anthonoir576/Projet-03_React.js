@@ -1,0 +1,24 @@
+
+// ####### SETTINGS  #########
+@import
+  'base/settings';
+
+
+
+// ###### COMPOSANTS #########  
+@import
+    'components/dynamicText',
+    'components/mouse',
+    'components/logo',
+    'components/scrollBottom',
+    'components/socialNetwork',
+    'components/navigation';
+
+
+    
+// ######   PAGES   ########
+@import
+  'pages/home',
+  'pages/project',
+  'pages/notFound',
+  'pages/contact';
