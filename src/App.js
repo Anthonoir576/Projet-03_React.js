@@ -3,7 +3,7 @@ import { Switch, Route, Redirect , useLocation, useHistory } from 'react-router-
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import {Projet1, Projet2, Projet3, Projet4} from './pages/Portfolio';
-
+import { AnimatePresence } from 'framer-motion';
 
 
 const App = () => {
@@ -12,7 +12,7 @@ const App = () => {
   let history = useHistory();
 
   useEffect(() => {
-    
+
     const handleScrollToElement = (e) => {
       console.log(e.wheelDeltaY);
       const url = window.location.origin + "/";
@@ -64,17 +64,19 @@ const App = () => {
   }, [history]);
 
   return (
-
-    <Switch location={location} key={location.pathname} >
-      <Route path="/" exact component={Home} />
-      <Route path="/projet01" exact component={Projet1} />
-      <Route path="/projet02" exact component={Projet2} />
-      <Route path="/projet03" exact component={Projet3} />
-      <Route path="/projet04" exact component={Projet4} />
-      <Route path="/contact" exact component={Contact} />
+    
+    <AnimatePresence>
+      <Switch location={location} key={location.pathname} >
+        <Route path="/" exact component={Home} />
+        <Route path="/projet01" exact component={Projet1} />
+        <Route path="/projet02" exact component={Projet2} />
+        <Route path="/projet03" exact component={Projet3} />
+        <Route path="/projet04" exact component={Projet4} />
+        <Route path="/contact" exact component={Contact} />
       <Redirect to="/" />
     </Switch>
-
+    </AnimatePresence>
+    
   );
 };
 
