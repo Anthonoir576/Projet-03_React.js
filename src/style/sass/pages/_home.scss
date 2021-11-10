@@ -13,7 +13,8 @@
     bottom: -480px;
     right: 0px;
     z-index: -2;
-    animation: homeAnim 15s infinite alternate;
+    animation: homeAnim 20s infinite alternate;
+    box-shadow: 10px 0px 50px 0px rgba(255, 255, 255, 0.200);
 
     @media screen and (max-width: 650px){
       height: 400px;

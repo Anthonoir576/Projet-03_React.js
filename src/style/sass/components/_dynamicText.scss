@@ -3,7 +3,8 @@
   display: flex;
 
   .simply {
-    color: $color-4;
+    color: $font-color;
+    font-weight: 100;
   }
 
   #text-target {
@@ -19,13 +20,13 @@
   }
   @keyframes color {
     0% {
-      color: $color-2;
+      color: $font-color;
     }
     50% {
-      color: $color-4;
+      color: $primaire;
     }
     100% {
-      color: $color-2;
+      color: $font-color;
     }
   }
   .letter {

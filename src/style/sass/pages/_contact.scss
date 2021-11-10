@@ -7,7 +7,7 @@
     content: "";
     height: 700px;
     width: 700px;
-    background: $color-3;
+    background: $primaire;
     border-radius: 50%;
     position: absolute;
     top: 150px;
@@ -58,12 +58,13 @@
     }
     h2 {
       margin-bottom: 20px;
+      color: $font-color;
 
       &:after {
         content: "";
         height: 70px;
         width: 70px;
-        border: 1px $color-2 solid;
+        border: 1px $primaire solid;
         border-radius: 50%;
         position: absolute;
         top: -22px;
@@ -81,7 +82,7 @@
         background: none;
         font-family: $font-1;
         font-size: 1.2rem;
-        border-bottom: 1px solid $color-2;
+        border-bottom: 1px solid $primaire;
 
         @media screen and (min-width: 1200px){
           font-size: 1.5rem;
@@ -99,7 +100,7 @@
       .email-content {
         position: relative;
         width: 100%;
-        border-bottom: 1px solid $color-2;
+        border-bottom: 1px solid $primaire;
 
         @media screen and (max-width: 540px){
           width: 75%;
@@ -214,9 +215,9 @@
     }
 
     h4 {
-      color: $color-4;
+      color: $font-color;
       font-size: 1.3rem;
-      font-weight: 200;
+      font-weight: 500;
       margin-bottom: 10px;
 
       @media screen and (min-width: 1200px){
@@ -274,7 +275,14 @@
           left: 0;
           transform: translateX(0);
         }
+
+        & p {color: $font-color;}
       }
+    }
+
+    & .content p {
+      color: $font-color;
+      font-weight: 100;
     }
     .email {
       @media screen and (max-width: 540px){
@@ -304,6 +312,7 @@
     }
     .credits {
       text-align: center;
+      color: $font-color;
 
       @media screen and (max-width: 740px){
         transform: translateY(20px);
